@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP GENERATOR (HOTLINE)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="mainDiv">
+
+        <form action="#" >
+            <h1>CEP WAR NOTES GENERATOR <br> HOTLINE</h1>
+
+            <div id="colSepDiv">
+
+                <div>
+                    <div>
+                        <div>
+                            <label for="ani">ANI:</label>
+                            <input type="number" name="ani" id="ani">
+                        </div>
+
+                        <div>
+                            <label for="BillingNum">Billing Account Number:</label>
+                            <input type="text" name="BillingNum" id="BillingNum">
+                        </div>
+
+                        <div>
+                            <label for="sfdcCaseNum">SFDC Case Number:</label>
+                            <input type="number" name="sfdcCaseNum" id="sfdcCaseNum">
+                        </div>
+
+                        <div>
+                            <label for="contactPerson">Contact Person:</label>
+                            <input type="text" name="contactPerson" id="contactPerson">
+                        </div>
+
+                        <div>
+                            <label for="contactNumber">Contact Number:</label>
+                            <input type="number" name="contactNumber" id="contactNumber">
+                        </div>
+
+                        <div>
+                            <label for="contactEmail">Contact Email:</label>
+                            <input type="email" name="contactEmail" id="contactEmail">
+                        </div>  
+
+                        <div>
+                            <label for="rAction">Required Action:</label>
+                            <select name="rAction" id="rAction">
+                                <option value="" selected></option>
+                                <option value="L2 Checking">L2 Checking</option>
+                                <option value="Dispatched for Outside Checking">Dispatched for Outside Checking</option>
+                            </select>
+                        </div>
+
+
+                        <div>
+                            <label for="wocas">Wocas:</label>
+                            <textarea name="wocas" id="wocas"></textarea>
+                        </div>
+                    
+                        <div>
+                            <label for="lightStatus">Light Status:</label>
+                            <textarea name="lightStatus" id="lightStatus"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="flm">Troubleshooting:</label>
+                            <textarea name="flm" id="flm"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="addRemarks">Additional Remarks:</label>
+                            <textarea name="addRemarks" id="addRemarks"></textarea>
+                        </div>
+
+                    </div>
+
+                    <!--------------------------------------------------------------------------->
+
+                    <div>
+
+                        <div>
+                            <label for="concernType">Concern:</label>
+                            <input type="text" name="concernType" id="concernType">
+                        </div>
+
+                        <div>
+                            <label for="workingPermit">Working Permit Needed:</label>
+                            <select name="workingPermit" id="workingPermit">
+                                <option value="Yes">Yes</option>
+                                <option value="" selected></option>
+                                <option value="Not needed">Not needed</option>
+                                <option value="Not needed - please bring ID">Not needed - please bring ID</option>
+                                <option value="For verification">For verification</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="Availability">Available Date and Time:</label>
+                            <input type="text" name="Availability" id="Availability">
+                        </div>
+
+                        <div>
+                            <label for="sID">Service ID</label>
+                            <input type="text" name="sID" id="sID">
+                        </div>
+
+                        <div>
+                            <label for="onuSN">Serial Number</label>
+                            <input type="text" name="onuSN" id="onuSN">
+                        </div>
+
+                        <div>
+                            <label for="cvResult">Clearview Result:</label>
+                            <input type="text" name="cvResult" id="cvResult">
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------------->  
+                
+
+            </div>
+        </form>
+
+        <div id="btnDiv">
+
+            <div>
+                <button onclick="showgrd()">GENERATE</button>
+            </div>
+
+        </div>
+
+        <div id="genResultDiv">
+
+            <div class="grd" id="cepNote">
+
+                <div>
+                    <h2>Cep Notes</h2>
+                </div>
+
+                <div>
+                    <textarea name="cepNoteta" id="cepNoteta"></textarea>
+                </div>
+
+                <div>
+                    <button onclick="plusSlidesGRD(1)">NEXT</button>
+                </div>
+
+            </div>
+
+            <div class="grd" id="specialIns">
+
+                <div>
+                    <h2>Special Instruction</h2>
+                </div>
+
+                <div>
+                    <textarea name="specialInsta" id="specialInsta"></textarea>
+                </div>
+
+                <div>
+                    <button onclick="plusSlidesGRD(-1)">BACK</button>
+                    <button onclick="plusSlidesGRD(1)">NEXT</button>
+                </div>
+
+            </div>
+
+            <div class="grd" id="abca">
+                <div>
+                    <h2>ABCA</h2>
+                </div>
+
+                <div>
+                    <textarea name="abcata" id="abcata"></textarea>
+                </div>
+
+                <div>
+                    <button onclick="reset()">RESET</button>
+                    <button onclick="plusSlidesGRD(-1)">BACK</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+<script src="script.js"></script>    
+</body>
+</html>
