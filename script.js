@@ -117,7 +117,7 @@ Availability Date and Time ${dateandTime}`;
     if (abcata) {
       abcata.value =
 `ANI ${ani}
-Billing Account Number ${contactNumber}
+Billing Account Number ${billingNum}
 Concern ${concern}
 Action ${remarks}`;
       navigator.clipboard.writeText(abcata.value);
