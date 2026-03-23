@@ -58,6 +58,7 @@ body{
 #genDiv{
     flex: 30%;
     overflow-x: hidden;
+    height: 100%;
 }
 
 .flowslides{
