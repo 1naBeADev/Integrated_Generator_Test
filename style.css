@@ -16,15 +16,48 @@ body{
     height: 100%;
 }
 
+#menubar{
+    border: 1px solid black;
+    flex: 20%;
+}
+
+#mdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mdiv>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mdiv>div>button{
+    font-family: "Comfortaa", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: .8rem;
+    background-color: transparent;
+    border: none;
+    transition: .8s;
+    padding: 1.2rem 0;
+}
+
+#mdiv>div>button:hover{
+    background-color: red;
+}
+
 #flowDiv{
-    flex: 50;
+    flex: 50%;
     display: flex;
 }
 
 #genDiv{
-    flex: 50%;
+    flex: 30%;
     overflow-x: hidden;
-    min-width:50vw;
 }
 
 .flowslides{
@@ -41,6 +74,10 @@ body{
     align-items: center;
     width: 100%;
     flex: 15%;
+}
+
+.pageHeader>h1{
+    font-size: 2rem;
 }
 
 .subhead{
