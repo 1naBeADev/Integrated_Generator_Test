@@ -8,6 +8,10 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
 function showSlides(n) {
   let slides = document.getElementsByClassName("flowslides");
   if (slides.length === 0) return;
@@ -18,6 +22,8 @@ function showSlides(n) {
   for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
   slides[slideIndex - 1].style.display = "flex";
 }
+
+
 
 // -------------------------
 // Load generator dynamically
